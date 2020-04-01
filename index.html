@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ContrAction</title>
+   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/b5ae79428f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1>ContrAction</h1>
+    <p>
+      Welcome to ContrAction!  We'll help you make effective, readable contracts that will meet your needs and protect your business.  To begin, select the sort of contract you'll need:
+    </p>
+    <div class="contract_container">
+    <button class= "contract_type" onclick="window.location.href='placeholder.html'">
+      <h2>Buying/Selling</h2>
+      <i class="fas fa-arrow-right"></i>
+  </button>
+    <button type="button" class="collhelp"><i class="fas fa-question-circle"></i></button>
+    <div class="colltext">
+      <p>
+        This is the sort of contract you would use when you're making a large or important purchase or selling off something large or important, like land or equipment.  However, you would also use this contract if you're involved with a series of small purchases, such as a supply agreement.  In other words, if you own something and want someone else to own it, or you want to buy something somebody else has, this is the contract for you.
+      </p>
+    </div>
+      </div>
+
+  <div class="contract_container">
+    <button class= "contract_type" onclick="openInfoForm()">
+      <h2>Renting/Leasing</h2>
+      <i class="fas fa-arrow-right"></i>
+<button type="button" class="collhelp"><i class="fas fa-question-circle"></i></button>
+
+<div class="colltext">
+  <p>
+  This is the contract when you're borrowing property or loaning property.  It includes rental agreements for things like cars, lease agreements for housing, and use agreements for event spaces.  If you own the property and still want to own it when the other person is done with it, or if you don't own the property but just want to use it, this is the contract you're looking for.
+  </p>
+</div>
+  </div>
+
+  <div class="contract_container">
+      <button class= "contract_type" onclick="window.location.href='placeholder.html'">
+      <h2>Employment/Contracting</h2>
+      <i class="fas fa-arrow-right"></i>
+    </button>
+    <button type="button" class="collhelp"><i class="fas fa-question-circle"></i></button>
+
+    <div class="colltext">
+      <p>
+      This is the contract you need if you're hiring someone or being hired, for short term or for long term.  It's for both contractors and employees.  If you're paying someone to do work, or being paid primarily for your services, this is the contract you want.
+      </p>
+    </div>
+    </div>
+
+      <div class="contract_container">
+<button class= "contract_type" onclick="window.location.href='placeholder.html'">
+      <h2>Other</h2>
+      <i class="fas fa-arrow-right"></i>
+  </button>
+      <button type="button" class="collhelp"><i class="fas fa-question-circle"></i></button>
+
+      <div class="colltext">
+        <p>
+        This is for any other contract.  It will start out general, but will give more options for customization as you work through it.  If none of the other contracts apply to your situation, start here.
+        </p>
+      </div>
+  </div>
+<div id="popup" class="popup">
+
+  <form id="rentForm" class="popup_form" action="index.html"  method="post">
+    <p>Do you own the property being rented?</p><br>
+    <input type="radio" id="owner" name="owned" value="yes">
+    <label for "owned">Yes</label><br>
+    <input type="radio" id="lessee" name="owned" value="No">
+    <label for "owned">No</label><br>
+    <p>How long is the lease for?</p>
+    <input type="radio" id="long" name="term" value="long">
+    <label for "term">Long (1 year or more)</label><br>
+    <input type="radio" id="short" name="term" value="short">
+    <label for "term">Short (Less than 1 year)</label><br>
+    <input type="radio" id="event" name="term" value="event">
+      <label for "term">1-time event</label><br>
+    <button type="submit" id="closeform" onclick="closeInfoForm()">Back</button>
+    <button type="submit" id="tocontract" onclick="window.location.href='contract.html'">Let's go!</button>
+
+  </div>
+
+  </form>
+    <script>
+// collapsible button script largely borrowed from https://www.w3schools.com/howto/howto_js_collapsible.asp
+  var help = document.getElementsByClassName("collhelp")
+  var i;
+
+  for (i = 0; i < help.length; i++) {
+    help[i].addEventListener("click", function(){
+      this.classList.toggle("active");
+      var text = this.nextElementSibling;
+      if (text.style.display === "block") {
+        text.style.display = "none";
+      } else {
+        text.style.display = "block";
+      }
+    })
+  }
+// Form help from https://www.w3schools.com/howto/howto_js_popup_form.asp
+function openInfoForm() {
+  document.getElementById("popup").style.display = "block";
+}
+
+function closeInfoForm() {
+  document.getElementById("popup").style.display = "none"
+}
+
+
+    </script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ContrAction</title>
+    <link rel="stylesheet" type="text/css" href="css/html-5-reset.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <script src="https://kit.fontawesome.com/b5ae79428f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1>ContrAction</h1>
+      <h2><button onclick="notWorkingFunc()">File</button></h2>
+      <h2><button>Edit</button></h2>
+      <h2><button>View</button></h2>
+      <div class="sectiondropdown">
+      <h2><button class = "sectionview">Sections</button></h2>
+      <div class="sections">
+        <h3><button class="sectionmenu" onclick="window.location.href='beginning.html'">Opening Sections</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='representations.html'">Representations and Warranties</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='covenants.html'">Covenants</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='miscellaneous.html'">Miscellaneous</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='signature.html'">Signatures</button></h3>
+      </div>
+    </div>
+      <!-- dropdown menu courtesy of https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+      <h2><button onclick="notWorkingFunc()">Help</button></h2>
+    </header>
+
+    <div class="tri">
+    <div class="left">
+    </div>
+    <div class="main">
+
+    <div class="sig">
+
+    <p><strong>Signatures</strong></p>
+    <p>To evidence the parties’ agreement to this Agreement, each party has executed and delivered it on the date indicated under that party’s signature.</p>
+    <br>
+    <p>
+      <input type="text" placeholder="Tenant Name">
+    </p>
+    <br>
+    <p>
+      <strong>By:</strong>_________________________
+    </p>
+    <br>
+    <p>
+      <input type="text" class= "long" placeholder="Name of Person Signing the Contract for Tenant">
+    </p>
+    <br>
+    <p>
+      <strong>Dated:</strong>_________________________
+    </p>
+    <br><br>
+    <p>
+      <input type="text" placeholder="Your Business's Name">
+    </p>
+    <br>
+    <p>
+      <strong>By:</strong>_________________________
+    </p>
+    <br>
+    <p>
+      <input type="text" class= "long" placeholder="Name of Person Signing the Contract for Your Business">
+    </p>
+    <br>
+    <p>
+      <strong>Dated:</strong>_________________________
+    </p>
+    </div>
+    <br><br>
+    <div class="pageselect">
+      <button type="button" onclick="window.location.href='miscellaneous.html'">Previous Section</button>
+    <button type="button" class="next" onclick="window.location.href='placeholder.html'">Finish</button>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div class="staydescription">
+      <h3>Signatures</h3>
+      <p>
+        The Signatures section, naturally, is where both parties sign and date the contract.  You include both the formal names of both parties, i.e. your business name, and the name of the actual person signing for each party.  This is the final part of the contract.  Congratulations! You wrote a contract!
+      </p>
+      </div>
+    </div>
+
+    <div class="right">
+    </div>
+    </div>
+      </div>
+<div id= "popup" class="pagedescbackground">
+    <div class="pagedesc">
+      <h3>Signatures</h3>
+      <p>
+        The Signatures section, naturally, is where both parties sign and date the contract.  You include both the formal names of both parties, i.e. your business name, and the name of the actual person signing for each party.  This is the final part of the contract.  Congratulations! You wrote a contract!
+      </p>
+      <button type="button" class="gotit" onclick="closeDescForm()">Got it</button>
+      </div>
+    </div>
+      <script>
+      function notWorkingFunc(){
+          alert("For this prototype, this tab is non-functional, but it would be fully functional in the final design.  Try the 'Sections'  tab.")}
+      function closeDescForm() {
+        document.getElementById("popup").style.display = "none"
+      }
+      </script>
+  </body>
+</html>

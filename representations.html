@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ContrAction</title>
+    <link rel="stylesheet" type="text/css" href="css/html-5-reset.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <script src="https://kit.fontawesome.com/b5ae79428f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1>ContrAction</h1>
+      <h2><button onclick="notWorkingFunc()">File</button></h2>
+      <h2><button>Edit</button></h2>
+      <h2><button>View</button></h2>
+      <div class="sectiondropdown">
+      <h2><button class = "sectionview">Sections</button></h2>
+      <div class="sections">
+        <h3><button class="sectionmenu" onclick="window.location.href='beginning.html'">Opening Sections</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='representations.html'">Representations and Warranties</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='covenants.html'">Covenants</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='miscellaneous.html'">Miscellaneous</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='signature.html'">Signatures</button></h3>
+      </div>
+    </div>
+      <!-- dropdown menu courtesy of https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+      <h2><button onclick="notWorkingFunc()">Help</button></h2>
+    </header>
+
+    <div class="tri">
+    <div class="left">
+    </div>
+    <div class="main">
+
+    <div class="repsland">
+
+    <p><strong>3.	Representations and Warranties of Landlord.</strong>The Landlord represents and warrants to the Tenant the following</p>
+    <p><strong>3.1 Rightful Owner. </strong>The Tenant is the full and rightful owner of the Property. </p>
+    <p><strong>3.2 Right to Lease. </strong>There are no liens nor encumbrances that would prohibit the Landlord from leasing the Property.</p>
+    <p><strong>3.3 Condition of Property. </strong>As of the start of the Lease Term, the Property is in suitable condition for renting and is no violation of applicable codes or regulations.</p>
+    </div>
+    <br>
+    <div class="repsten">
+        <p><strong>4.	Representations and Warranties of Tenant.</strong>The Tenant represents and warrants to the Tenant the following:</p>
+        <p><strong>4.1 Lawfully Organized. </strong>The Tenant is a lawfully organized according to the laws of the state of <input type="text" class= "long" placeholder="The state where the tenant is located">. <button type="button" class="helpicon" onclick="openHelp1()"><i class="fas fa-question-circle"></i></button></p>
+        <br><br>
+        <div class="pageselect">
+          <button type="button" onclick="window.location.href='beginning.html'">Previous Section</button>
+        <button type="button" class="next" onclick="window.location.href='covenants.html'">Next Section</button>
+        </div>
+          <br><br><br><br><br><br><br>
+        <div class="staydescription">
+          <h3>Representations and Warranties</h3>
+          <p>
+            Representations and warranties are promises about the state of the world.  They are information statements, in which the parties promise that certain facts are true.  This way, you can hold the other party accountable, not for any promises they fail to uphold, but for saying things that aren't true. Although representations cannot be about future states or events (but warranties can), and an unture representation has stronger penalties than an untrue warranty, they typically get lumped together.
+          </p>
+        </div>
+    </div>
+  </div>
+  <div class="right">
+  </div>
+  </div>
+<div id= "popup" class="pagedescbackground">
+    <div class="pagedesc">
+      <h3>Representations and Warranties</h3>
+      <p>
+        Representations and warranties are promises about the state of the world.  They are information statements, in which the parties promise that certain facts are true.  This way, you can hold the other party accountable, not for any promises they fail to uphold, but for saying things that aren't true. Although representations cannot be about future states or events (but warranties can), and an unture representation has stronger penalties than an untrue warranty, they typically get lumped together.
+
+      </p>
+      <button type="button" class="gotit" onclick="closeDescForm()">Got it</button>
+    </div>
+</div>
+
+<div id= "help1" class="tooltips">
+    <div class="tooltipstext">
+      This is where you put the state in which your tenant is incorporated. It's helpful to include because it makes your tenant promise that they are who they say they are and are a legal business. Note that this only applies to a tenant that's a business; if you're renting to an individual, you would omit this provision.
+
+      </p>
+          <button type="button" class="gotit" onclick="closeHelp1()">Got it</button>
+    </div>
+</div>
+<script>
+function notWorkingFunc(){
+  alert("For this prototype, this tab is non-functional, but it would be fully functional in the final design.  Try the 'Sections'  tab.")}
+function closeDescForm() {
+  document.getElementById("popup").style.display = "none"
+}
+
+function openHelp1(){
+  document.getElementById("help1").style.display = "block"
+}
+
+
+function closeHelp1() {
+  document.getElementById("help1").style.display = "none"
+}
+</script>
+  </body>
+</html>

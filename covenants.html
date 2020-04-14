@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ContrAction</title>
+    <link rel="stylesheet" type="text/css" href="css/html-5-reset.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <script src="https://kit.fontawesome.com/b5ae79428f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1>ContrAction</h1>
+      <h2><button onclick="notWorkingFunc()">File</button></h2>
+      <h2><button>Edit</button></h2>
+      <h2><button>View</button></h2>
+      <div class="sectiondropdown">
+      <h2><button class = "sectionview">Sections</button></h2>
+      <div class="sections">
+        <h3><button class="sectionmenu" onclick="window.location.href='beginning.html'">Opening Sections</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='representations.html'">Representations and Warranties</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='covenants.html'">Covenants</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='miscellaneous.html'">Miscellaneous</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='signature.html'">Signatures</button></h3>
+      </div>
+    </div>
+      <!-- dropdown menu courtesy of https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+      <h2><button onclick="notWorkingFunc()">Help</button></h2>
+    </header>
+    <div class="tri">
+    <div class="left">
+    </div>
+    <div class="main">
+    <div class="covland">
+
+    <p><strong>5.	Covenants of the Landlord.</strong></p>
+    <p><strong>5.1 No Other Tenants.</strong> The Landlord shall not grant nor offer a lease on the Property to any person other than the Tenant until the end of the Lease Term.</p>
+    <p><strong>5.2 Upkeep of Property. </strong>The Landlord shall maintain the Property in suitable condition for renting until the start of the Lease Term.</p>
+    <p><strong>5.3 Notice of Entry. </strong>The Landlord shall not enter the Property without notice to the Tenant at least 24 hours prior to the entry.  The Landlord may enter the property without notice during an emergency that threatens to cause irreparable harm to the Property.</p>
+    <p><strong>5.4 Maintenance. </strong>The Landlord shall not enter the Property without notice to the Tenant at least 24 hours prior to the entry.  The Landlord may enter the property without notice during an emergency that threatens to cause irreparable harm to the Property.</p>
+    </div>
+    <br>
+    <div class="covten">
+      <p><strong>6.	Covenants of the Tenant.</strong></p>
+      <p><strong>6.1 Notice of Repairs.</strong> The Tenant shall notify the Landlord in writing upon noticing that the Property needs maintenance or repairs.</p>
+      <p><strong>5.2 No Criminal Activity. </strong>The Tenant shall not perform nor cause to be performed any misdemeanor or felony at the Property.</p>
+      <p><strong>5.3 No Damage to Property. </strong>The Tenant shall not cause any damage to the Property.  </p>
+    </div>
+<br><br>
+<div class="pageselect">
+  <button type="button" onclick="window.location.href='representations.html'">Previous Section</button>
+<button type="button" class="next" onclick="window.location.href='miscellaneous.html'">Next Section</button>
+</div>
+    <br><br><br><br><br><br><br>
+<div class="staydescription">
+  <h3>Covenants</h3>
+  <p>
+    Covenants are promises.  These are things beyond the main agreement (in the "Action Section") that each side promises the other they will (or won't) do.  One thing to note is that, when writing covenants, use "shall" or "shall not" instead of "will" or "will not".  This makes it extra clear that the provision in question is a covenant.
+  </p>
+  </div>
+</div>
+<div class="right">
+</div>
+</div>
+  <div id= "popup" class="pagedescbackground">
+    <div class="pagedesc">
+      <h3>Covenants</h3>
+      <p>
+        Covenants are promises.  These are things beyond the main agreement (in the "Action Section") that each side promises the other they will (or won't) do.  One thing to note is that, when writing covenants, use "shall" or "shall not" instead of "will" or "will not".  This makes it extra clear that the provision in question is a covenant.
+      </p>
+      <button type="button" class="gotit" onclick="closeDescForm()">Got it</button>
+      </div>
+    </div>
+    <script>
+    function notWorkingFunc(){
+      alert("For this prototype, this tab is non-functional, but it would be fully functional in the final design.  Try the 'Sections'  tab.")}
+    function closeDescForm() {
+      document.getElementById("popup").style.display = "none"
+    }
+    </script>
+  </body>
+</html>

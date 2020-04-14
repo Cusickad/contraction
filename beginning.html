@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ContrAction</title>
+    <link rel="stylesheet" type="text/css" href="css/html-5-reset.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <script src="https://kit.fontawesome.com/b5ae79428f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1>ContrAction</h1>
+      <h2><button onclick="notWorkingFunc()">File</button></h2>
+      <h2><button onclick="notWorkingFunc()">Edit</button></h2>
+      <h2><button onclick="notWorkingFunc()">View</button></h2>
+      <div class="sectiondropdown">
+      <h2><button class = "sectionview">Sections</button></h2>
+      <div class="sections">
+        <h3><button class="sectionmenu" onclick="window.location.href='beginning.html'">Opening Sections</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='representations.html'">Representations and Warranties</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='covenants.html'">Covenants</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='miscellaneous.html'">Miscellaneous</button></h3>
+        <h3><button class="sectionmenu" onclick="window.location.href='signature.html'">Signatures</button></h3>
+      </div>
+    </div>
+      <!-- dropdown menu courtesy of https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+      <h2><button onclick="notWorkingFunc()">Help</button></h2>
+    </header>
+<div class="tri">
+<div class="left">
+</div>
+<div class="main">
+
+
+<div class = "preamble">
+  <h4>LEASE AGREEMENT</h4>
+  <p>This <strong>Lease Agreement</strong> (this <strong>“Agreement”</strong>), dated <input type="date"> <button type="button" class="helpicon" onclick="openHelp1()"><i class="fas fa-question-circle"></i></button> is between <input type="text" class= "long" placeholder="Your business's name/your name"> <button type="button" class="helpicon" onclick="openHelp2()"><i class="fas fa-question-circle"></i></button> (the <strong>“Landlord”</strong>) and <input type="text" placeholder="The Tenant's name"> <button type="button" class="helpicon" onclick="openHelp3()"><i class="fas fa-question-circle"></i></button> (the <strong>“Tenant”</strong>).
+  </p>
+  </div>
+  <div class="recitals">
+    <br>
+      <strong>Background</strong>
+      <p>
+      <ol>
+        <li>The Landlord owns the property located at <input type="text" class= "long" placeholder="The address of the property to be rented"> <button type="button" class="helpicon" onclick="openHelp4()"><i class="fas fa-question-circle"></i></button> (along with all items within the property, the <strong>“Property”</strong>).</li>
+        <li>The Tenant wishes to rent the Property from the Landlord.</li>
+        <li><textarea placeholder="Feel free to enter other background items you think are important, or leave it blank."></textarea> <button type="button" class="helpicon" onclick="openHelp5()"><i class="fas fa-question-circle"></i></button></li>
+      </ol>
+    </p>
+      <p>
+      Accordingly, the parties agree as follows:
+    </p>
+</div>
+
+<div class="definitions">
+<br>
+<p><strong>1. Definitions.</strong></p>
+<p><strong>1.1 Defined terms. </strong> Each term defined in the preamble and the background of this Agreement has its assigned meaning, and each of the following terms has the meaning assigned to it. </p>
+<p>
+  <strong>"Lease Term"</strong> means the period from <input type="date"> to <input type="date">.<button type="button" class="helpicon" onclick="openHelp6()"><i class="fas fa-question-circle"></i></button></li>
+</p>
+<p>
+  <textarea placeholder="If you use a phrase a lot in the contract, define it here."></textarea> <button type="button" class="helpicon" onclick="openHelp7()"><i class="fas fa-question-circle"></i></button></li>
+</p>
+</div>
+
+<div class="action">
+<br>
+<p><strong>2. Lease.</strong></p>
+<p><strong>2.1 Agreement to Lease. </strong> Subject to the terms of this Agreement, on the first day of the Lease Term the Landlord shall lease the Property to the Tenant, and the Tenant shall lease the Property from the Landlord. </p>
+<p><strong>2.2 Rent Price. </strong> The Tenant shall pay the Landlord <input type="text" class= "long" placeholder="The total rent price; the sum of all months' rent"> in the form of <input type="text" class= "long" placeholder="The number of rent payments the tenant is making; the number of months in the lease term"> of equal monthly payments of <input type="text" class= "long" placeholder="The amount of each rent payment; the total rent price divided by the number of months in the rent term">.  The Tenant shall pay each payment no later than the first of each month of the Lease Term.  Each payment must be in the form of a check sent to <input type="text" class= "long" placeholder="The address to which the tenant should send checks"> and must be postmarked by the due date. <button type="button" class="helpicon" onclick="openHelp8()"><i class="fas fa-question-circle"></i></button> </p>
+<p><strong>2.3 Deposit. </strong> The Tenant shall pay the Landlord a deposit of <input type="text" placeholder="The amount of the deposit"> by the start of the Lease Term.  This deposit will be held at <input type="text" class= "long" placeholder="The place where the deposit will be held">, and the Landlord shall return the deposit, minus the cost to repair material damage caused by the Tenant, to the Tenant at the end of the Lease Term.<button type="button" class="helpicon" onclick="openHelp9()"><i class="fas fa-question-circle"></i></button> </p>
+<p><strong>2.4 Utilities. </strong> The Tenant shall be responsible for securing and paying for all utilities.
+<p><strong>2.5 End of Lease. </strong> The Tenant shall vacate the Property and shall remove any items belonging to the Tenant from the Property by the end of the Lease Term. </p>
+</div>
+<br><br>
+<div class="pageselect">
+  <button type="button" class="next" onclick="window.location.href='representations.html'">Next Section</button>
+
+</div>
+    <br><br><br><br><br><br><br>
+<div class="staydescription">
+  <h1>Welcome to ContrAction!</h3>
+  <p>
+    The contract we'll be drafting is a sublease agreement.  That's a contract where you currently rent a property, but you're having someone assume the lease from you for a period of time.  It's similar to a standard rental agreement in a lot of ways.  We'll walk through all the parts of the contract and how they work.
+  </p>
+  <h2>What do I need to know about contracts?</h2>
+  <h3>What is a contract?</h3>
+  <p>
+  A contract is a written agreement between two (or sometimes more) parties.  A "party" in this case is a person, business, or organization that is agreeing to something with another person, business, or organization.  A contract memorializes an agreement; in other words, a contract should be a written record of what you're agreeing to, so you should have discussed it beforehand.
+  </p>
+  <h3>Why should I write a contract?</h3>
+  <p>
+    In a perfect world, you'd never need a written contract.  Everyone would remember and stick to their promises.  However, this is an imperfect world.  A contract can help you and the other party remember what you each agreed to do.  More importantly, a contract can hold the parties to their agreements.  A contract is a legally binding document, which means that a court can uphold the terms of the agreement.  This means that you shouldn't agree to something you can't or don't want to fulfill, as you can be forced to uphold it.  So, a well-written contract can mean that you can hold the other party to their promises without inadvertently making a promise they didn't mean to.
+  </p>
+  <h3>What is a makes a good contract?</h3>
+  <p>
+    To understand what makes a good contract, it's important to know that a contract involves hoping for the best but preparing for the worst.  Ideally, everyone will uphold the terms of their bargain with no issue.  If you're turning to the contract, something has already gone wrong. So, in writing the contract, you need to prepare for things going wrong, which means you'll want to write a contract that courts will interpret in your favor.  Courts generally try to find and uphold what the parties intended to agree to.  As such, a good contract makes it clear what the parties are agreeing on.  Ambiguity is bad, because it means room to interpret what the parties mean.  Your contract should be as clear as possible and state everything that is part of your deal.
+  </p>
+  <h2>What are the parts of a contract?</h2>
+  <h3>Preamble</h3>
+  <p>
+    The Preamble is the introduction to the contract.  It's where the most basic information about the contract is laid out: what type of contract it is, who it's between, and when it takes effect.  Although you can go into more detail about these elements, making for a longer Preamble, the basic elements are simple.
+  </p>
+  <h3>Background</h3>
+  <p>
+    The Background (also called the "recitals") is an optional part of a contract.  It explains why both parties are entering into the deal.  It exists because it can help set the tone for a contract and it can help show the intentions of the parties if there comes a dispute.  That being said, it's not officially "part of the agreement", so you can largely put whatever you want or omit it entirely.
+  </p>
+  <h3>Definitions</h3>
+  <p>
+  The Definitions exist to keep the contract short and simple, or at least shorter and simpler.  Instead of using a phrase over and over throughout the contact, such as always writing the beginning and end of a lease term, you can replace the phrase with one word, which goes in this section. To do so, you state what word you want to use, and explain it's meaning, as shown here.  You can use any word you want to define a phrase (for example, you could call the payment amount "Apple"), but it's always best to choose a word that makes sense in context with the defined phrase. Note that the terms defined before the Definitions section are incorporated by reference, so we don't have to re-define them.
+  </p>
+  <h3>Action Section</h3>
+  <p>
+    The Action Section, (the "Lease" section here), is the heart of the contract.  This is where the core deal is hammered out, usually goods or services in exchange for money.  This is where you lay out what is being traded for how much.  If you could only have one section of the contract, this is the one you'd want to keep.  Here, you agree to lease the property, and the tenant agrees to pay rent.  It lays out how rent is paid and the deposit terms.
+  </p>
+</div>
+</div>
+<div class="right">
+</div>
+</div>
+<div id= "popup" class="pagedescbackground">
+<div class="pagedesc">
+  <h1>Welcome to ContrAction!</h3>
+  <p>
+    The contract we'll be drafting is a sublease agreement.  That's a contract where you currently rent a property, but you're having someone assume the lease from you for a period of time.  It's similar to a standard rental agreement in a lot of ways.  We'll walk through all the parts of the contract and how they work.
+  </p>
+  <h2>What do I need to know about contracts?</h2>
+  <h3>What is a contract?</h3>
+  <p>
+  A contract is a written agreement between two (or sometimes more) parties.  A "party" in this case is a person, business, or organization that is agreeing to something with another person, business, or organization.  A contract memorializes an agreement; in other words, a contract should be a written record of what you're agreeing to, so you should have discussed it beforehand.
+  </p>
+  <h3>Why should I write a contract?</h3>
+  <p>
+    In a perfect world, you'd never need a written contract.  Everyone would remember and stick to their promises.  However, this is an imperfect world.  A contract can help you and the other party remember what you each agreed to do.  More importantly, a contract can hold the parties to their agreements.  A contract is a legally binding document, which means that a court can uphold the terms of the agreement.  This means that you shouldn't agree to something you can't or don't want to fulfill, as you can be forced to uphold it.  So, a well-written contract can mean that you can hold the other party to their promises without inadvertently making a promise they didn't mean to.
+  </p>
+  <h3>What is a makes a good contract?</h3>
+  <p>
+    To understand what makes a good contract, it's important to know that a contract involves hoping for the best but preparing for the worst.  Ideally, everyone will uphold the terms of their bargain with no issue.  If you're turning to the contract, something has already gone wrong. So, in writing the contract, you need to prepare for things going wrong, which means you'll want to write a contract that courts will interpret in your favor.  Courts generally try to find and uphold what the parties intended to agree to.  As such, a good contract makes it clear what the parties are agreeing on.  Ambiguity is bad, because it means room to interpret what the parties mean.  Your contract should be as clear as possible and state everything that is part of your deal.
+  </p>
+  <h2>What are the parts of a contract?</h2>
+  <h3>Preamble</h3>
+  <p>
+    The Preamble is the introduction to the contract.  It's where the most basic information about the contract is laid out: what type of contract it is, who it's between, and when it takes effect.  Although you can go into more detail about these elements, making for a longer Preamble, the basic elements are simple.
+  </p>
+  <h3>Background</h3>
+  <p>
+    The Background (also called the "recitals") is an optional part of a contract.  It explains why both parties are entering into the deal.  It exists because it can help set the tone for a contract and it can help show the intentions of the parties if there comes a dispute.  That being said, it's not officially "part of the agreement", so you can largely put whatever you want or omit it entirely.
+  </p>
+  <h3>Definitions</h3>
+  <p>
+  The Definitions exist to keep the contract short and simple, or at least shorter and simpler.  Instead of using a phrase over and over throughout the contact, such as always writing the beginning and end of a lease term, you can replace the phrase with one word, which goes in this section. To do so, you state what word you want to use, and explain it's meaning, as shown here.  You can use any word you want to define a phrase (for example, you could call the payment amount "Apple"), but it's always best to choose a word that makes sense in context with the defined phrase. Note that the terms defined before the Definitions section are incorporated by reference, so we don't have to re-define them.
+  </p>
+  <h3>Action Section</h3>
+  <p>
+    The Action Section, (the "Lease" section here), is the heart of the contract.  This is where the core deal is hammered out, usually goods or services in exchange for money.  This is where you lay out what is being traded for how much.  If you could only have one section of the contract, this is the one you'd want to keep.  Here, you agree to lease the property, and the tenant agrees to pay rent.  It lays out how rent is paid and the deposit terms.
+  </p>
+  <button type="button" class="gotit" onclick="closeDescForm()">Got it</button>
+</div>
+</div>
+
+<div id= "help1" class="tooltips">
+    <div class="tooltipstext">
+    This is the date the agreement takes effect.  Typically, set this for the date you plan on signing the agreement.
+
+      </p>
+      <button type="button" class="gotit" onclick="closeHelp1()">Got it</button>
+    </div>
+</div>
+<div id= "help2" class="tooltips">
+    <div class="tooltipstext">
+      This is where you put your name, or, more specifically, your business's name.  If your business is not involved in this deal, and it's just you, you can put your personal name.
+
+      </p>
+        <button type="button" class="gotit" onclick="closeHelp2()">Got it</button>
+    </div>
+</div>
+<div id= "help3" class="tooltips">
+    <div class="tooltipstext">
+  This is where the Tenant's name goes.  Put their business name if they're a business or their personal name if they're an individual.
+
+      </p>
+              <button type="button" class="gotit" onclick="closeHelp3()">Got it</button>
+    </div>
+</div>
+<div id= "help4" class="tooltips">
+    <div class="tooltipstext">
+      Put the full street address of the property that you are renting out.
+
+      </p>
+        <button type="button" class="gotit" onclick="closeHelp4()">Got it</button>
+    </div>
+</div>
+<div id= "help5" class="tooltips">
+    <div class="tooltipstext">
+      If you want to add anything else to the background, you can do so here, although it is optional. The background explains why the parties are making the deal in the first place and helps clarify your intent.  This part isn't "officially" part of the contract, so you can edit as much or as little as you want.
+
+      </p>
+              <button type="button" class="gotit" onclick="closeHelp5()">Got it</button>
+    </div>
+</div>
+<div id= "help6" class="tooltips">
+    <div class="tooltipstext">
+      Put the start and end of the lease term here.
+
+      </p>
+          <button type="button" class="gotit" onclick="closeHelp6()">Got it</button>
+    </div>
+</div>
+<div id= "help7" class="tooltips">
+    <div class="tooltipstext">
+      This is where you can define your own terms.  If you use a specific phrase several times throughout the contract, you can assign that phrase to a word and then use that word instead of the phrase.  You can use any word to define a phrase, and you can choose to define any phrase, but make sure you use it consistantly throughout the contract.
+
+      </p>
+        <button type="button" class="gotit" onclick="closeHelp7()">Got it</button>
+    </div>
+</div>
+<div id= "help8" class="tooltips">
+    <div class="tooltipstext">
+      This section talks about the rent price.  Put the total amount in the first box, the number of payments in the second, the amount of each payment in the third, and where the money should be sent in the fourth.
+
+      </p>
+          <button type="button" class="gotit" onclick="closeHelp8()">Got it</button>
+    </div>
+</div>
+<div id= "help9" class="tooltips">
+    <div class="tooltipstext">
+This section is about the deposit.  Put how much the tenant should put down as a deposit and the location where that deposit will be held.
+
+      </p>
+          <button type="button" class="gotit" onclick="closeHelp9()">Got it</button>
+    </div>
+</div>
+<script>function notWorkingFunc(){
+  alert("For this prototype, this tab is non-functional, but it would be fully functional in the final design.  Try the 'Sections'  tab.")}
+  function closeDescForm() {
+    document.getElementById("popup").style.display = "none"
+  }
+  function openHelp1(){
+    document.getElementById("help1").style.display = "block"
+  }
+
+
+  function closeHelp1() {
+    document.getElementById("help1").style.display = "none"
+  }
+  function openHelp2(){
+    document.getElementById("help2").style.display = "block"
+  }
+
+
+  function closeHelp2() {
+    document.getElementById("help2").style.display = "none"
+  }
+  function openHelp3(){
+    document.getElementById("help3").style.display = "block"
+  }
+
+
+  function closeHelp3() {
+    document.getElementById("help3").style.display = "none"
+  }
+  function openHelp4(){
+    document.getElementById("help4").style.display = "block"
+  }
+
+
+  function closeHelp4() {
+    document.getElementById("help4").style.display = "none"
+  }
+  function openHelp5(){
+    document.getElementById("help5").style.display = "block"
+  }
+
+
+  function closeHelp5() {
+    document.getElementById("help5").style.display = "none"
+  }
+  function openHelp6(){
+    document.getElementById("help6").style.display = "block"
+  }
+
+
+  function closeHelp6() {
+    document.getElementById("help6").style.display = "none"
+  }
+  function openHelp7(){
+    document.getElementById("help7").style.display = "block"
+  }
+
+
+  function closeHelp7() {
+    document.getElementById("help7").style.display = "none"
+  }
+  function openHelp8(){
+    document.getElementById("help8").style.display = "block"
+  }
+
+
+  function closeHelp8() {
+    document.getElementById("help8").style.display = "none"
+  }
+  function openHelp9(){
+    document.getElementById("help9").style.display = "block"
+  }
+
+
+  function closeHelp9() {
+    document.getElementById("help9").style.display = "none"
+  }
+</script>
+  </body>
+</html>

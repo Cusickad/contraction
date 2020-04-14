@@ -3,19 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>ContrAction</title>
-   <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+   <link rel="stylesheet" type="text/css" href="css/html-5-reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://kit.fontawesome.com/b5ae79428f.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="tri">
+    <div class="left">
+    </div>
+    <div class="main">
+      <div class="firstheader">
     <h1>ContrAction</h1>
+    </div>
+    <br>
     <p>
       Welcome to ContrAction!  We'll help you make effective, readable contracts that will meet your needs and protect your business.  To begin, select the sort of contract you'll need:
     </p>
+    <br>
     <div class="contract_container">
-    <button class= "contract_type" onclick="window.location.href='placeholder.html'">
-      <h2>Buying/Selling</h2>
-      <i class="fas fa-arrow-right"></i>
+    <button class= "contract_type" onclick="notAvailable()">
+      <h2>Buying/Selling  <i class="fas fa-arrow-right"></i></h2>
+
   </button>
     <button type="button" class="collhelp"><i class="fas fa-question-circle"></i></button>
     <div class="colltext">
@@ -24,11 +32,11 @@
       </p>
     </div>
       </div>
-
+<br>
   <div class="contract_container">
     <button class= "contract_type" onclick="openInfoForm()">
-      <h2>Renting/Leasing</h2>
-      <i class="fas fa-arrow-right"></i>
+      <h2>Renting/Leasing <i class="fas fa-arrow-right"></i></h2>
+
 <button type="button" class="collhelp"><i class="fas fa-question-circle"></i></button>
 
 <div class="colltext">
@@ -38,10 +46,11 @@
 </div>
   </div>
 
+<br>
   <div class="contract_container">
-      <button class= "contract_type" onclick="window.location.href='placeholder.html'">
-      <h2>Employment/Contracting</h2>
-      <i class="fas fa-arrow-right"></i>
+      <button class= "contract_type" onclick="notAvailable()">
+      <h2>Employment/Contracting <i class="fas fa-arrow-right"></i></h2>
+
     </button>
     <button type="button" class="collhelp"><i class="fas fa-question-circle"></i></button>
 
@@ -51,11 +60,11 @@
       </p>
     </div>
     </div>
-
+<br>
       <div class="contract_container">
-<button class= "contract_type" onclick="window.location.href='placeholder.html'">
-      <h2>Other</h2>
-      <i class="fas fa-arrow-right"></i>
+<button class= "contract_type" onclick="notAvailable()">
+      <h2>Other   <i class="fas fa-arrow-right"></i></h2>
+
   </button>
       <button type="button" class="collhelp"><i class="fas fa-question-circle"></i></button>
 
@@ -65,9 +74,12 @@
         </p>
       </div>
   </div>
+</div>
+<div class="right">
+</div>
+</div>
 <div id="popup" class="popup">
-
-  <form id="rentForm" class="popup_form" action="index.html"  method="post">
+  <div class="popup_form" class="popup_form">
     <p>Do you own the property being rented?</p><br>
     <input type="radio" id="owner" name="owned" value="yes">
     <label for "owned">Yes</label><br>
@@ -80,12 +92,12 @@
     <label for "term">Short (Less than 1 year)</label><br>
     <input type="radio" id="event" name="term" value="event">
       <label for "term">1-time event</label><br>
-    <button type="submit" id="closeform" onclick="closeInfoForm()">Back</button>
-    <button type="submit" id="tocontract" onclick="window.location.href='contract.html'">Let's go!</button>
-
+    <button id="closeform" onclick="closeInfoForm()">Back</button>
+    <button id="tocontract" onclick="toNext()">Let's go!</button>
+      </div>
   </div>
 
-  </form>
+
     <script>
 // collapsible button script largely borrowed from https://www.w3schools.com/howto/howto_js_collapsible.asp
   var help = document.getElementsByClassName("collhelp")
@@ -111,6 +123,18 @@ function closeInfoForm() {
   document.getElementById("popup").style.display = "none"
 }
 
+function notAvailable() {
+  alert("This is only a prototype for ContrAction, so some of the pages and functionalities aren't available yet.  This is just intended to show how different contract types would be selected, and ordinarily you'd be taken to the contract type you selected.  At the moment, only a short-term rental agreement is available, and only from the point of view of the lessor. Try selecting 'Renting/Leasing', then select 'Yes' when asked if you own the property and 'short term' when asked the duration.")
+}
+
+function toNext() {
+  if (document.getElementById("owner").checked == true && document.getElementById("short").checked == true){
+    window.location.href='beginning.html'
+  } else{
+    notAvailable()
+  }
+
+}
 
     </script>
 
